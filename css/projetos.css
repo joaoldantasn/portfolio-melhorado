@@ -18,6 +18,7 @@
 }
 .projetos-lista li{
   cursor: pointer;
+  margin: 2px;
 }
 .projetos-lista::-webkit-scrollbar{
   width: 18px;
