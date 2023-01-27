@@ -9,6 +9,18 @@
   display: grid;
   grid-template-columns: 1fr 1.25fr 1fr;
   grid-gap: 30px;
+  position: relative;
+}
+
+.projetos-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
 }
 .projetos-lista{
   grid-column: 2;
@@ -18,7 +30,7 @@
 }
 .projetos-lista li{
   cursor: pointer;
-  margin: 2px;
+  margin:0 0 2px 0;
 }
 .projetos-lista::-webkit-scrollbar{
   width: 18px;
@@ -27,6 +39,24 @@
   background: #123F4C;
   border-left: 4px solid #141414;
   border-right: 4px solid #141414;
+}
+
+.projetos-content{
+  position: relative;
+  padding:0 20px 0 20px;
+}
+.projetos-content h2{
+  padding:0 0 10px 0;
+}
+.projetos-content h2::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 15px;
+  background: linear-gradient(#1f6880, #123f4c);
+  position: absolute;
+  left: 14px;
+  top: 5px;
 }
 
 /*Navegação por Tabs*/
